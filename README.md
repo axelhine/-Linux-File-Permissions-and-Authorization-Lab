@@ -82,7 +82,7 @@ chmod g-w,u-w project_x.txt
 chmod: cannot access 'project_x.txt': No such file or directory
 ```
 
-I corrected the filename and ran the commands again. The first removes write for the user and group, and the second adds read for both:
+I corrected the filename and ran the commands again. The first removes write for the user and group. The second adds read for both, though the user already had read, so only the group's permissions changed:
 
 ```bash
 chmod g-w,u-w .project_x.txt
